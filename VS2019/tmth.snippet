@@ -11,8 +11,8 @@
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Code Language="CSharp">
-public void ${1:MyTestMethod}()
+      <Code Language="CSharp"><![CDATA[
+public void $MyTestMethod$()
 {
   // Arrange
 
@@ -23,8 +23,15 @@ public void ${1:MyTestMethod}()
   // Assert
 
 
-}
+}]]>
       </Code>
+	  <Declarations>
+		<Literal>
+		  <ID>MyTestMethod</ID>
+		  <ToolTip>Choose the name of test method.</ToolTip>
+		  <Default>MyTestMethod</Default>
+		</Literal>
+	  </Declarations>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
